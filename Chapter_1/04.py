@@ -1,7 +1,12 @@
-sentence = "I am an NLPer"
+string = "Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also Sign Peace Security Clause. Arthur King Can"
 
-def nGramWord(string,n):
-  string = string.split()
-  return[string[i:i+n] for i in range(len(string)-n+1)]
-
-print(nGramWord(sentence,2))
+extractedList = []
+i = 1
+extractedString = ''
+for word in string.split():
+  if(i in [1,5,6,7,8,9,15,16,19]):
+    extractedString += word[:1:]
+  else:
+    extractedString += word[:2:]
+  i+=1
+print(extractedString)
