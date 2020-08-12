@@ -11,5 +11,12 @@ print(X)
 print(Y)
 
 print(sorted(X.union(Y)))
+print(sorted(X.intersection(Y)))
+print(sorted(X.difference(Y)))
 
-# sorted(X.union(Y))
+Z = set()
+Z.add("se")
+if(Z.intersection((X).intersection(Y))):
+  print("True")
+else:
+  print("False")

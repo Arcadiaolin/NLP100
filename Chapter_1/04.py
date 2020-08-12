@@ -2,11 +2,12 @@ string = "Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might
 
 extractedList = []
 i = 1
-extractedString = ''
-for word in string.split():
+AtomicSymbols = dict()
+for i,word in enumerate(string.split(),1):
   if(i in [1,5,6,7,8,9,15,16,19]):
-    extractedString += word[:1:]
+    AtomicSymbols[word[:1:]]= i
   else:
-    extractedString += word[:2:]
+    AtomicSymbols[word[:2:]] = i
   i+=1
-print(extractedString)
+  
+print(AtomicSymbols)
