@@ -1,0 +1,1 @@
+wc -l ../resouce/popular-names.txt
