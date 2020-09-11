@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 
-JSON_PATH = "resource\jawiki-country.json.gz"
+JSON_PATH = "resource/jawiki-country.json.gz"
 
 pattern = re.compile('^=+.*=+$')  # 1回以上の=で始まり、1回以上の=で終わる文字列
 wiki = pd.read_json(JSON_PATH, lines=True)

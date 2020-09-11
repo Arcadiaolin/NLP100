@@ -1,0 +1,3 @@
+[PATH]
+JSON_PATH=/Users/y.pan/Documents/NLP100/NLP100/resource/jawiki-country.json.gz
+
